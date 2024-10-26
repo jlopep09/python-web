@@ -9,7 +9,7 @@ FOOTER_TEXT = "Convirtiendo la programación en mi futuro trabajo."
 
 def footer()-> rx.Component:
     return rx.vstack(
-        rx.image(src="favicon.ico", width="32px", height="auto"),
+        rx.image(src="/favicon.ico", width="32px", height="auto"),
         rx.link(rx.text(FOOTER_LINK_TEXT, _hover={"color": colors.TextColor.BODY}),
                 href = FOOTER_LINK, 
                 **styles.footer_link_styles

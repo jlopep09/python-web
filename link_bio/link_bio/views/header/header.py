@@ -9,11 +9,12 @@ import link_bio.styles.colors as colors
 HEADER FUNCTION
 """
 
-def header()-> rx.Component:
+def header(showInfo:bool)-> rx.Component:
     return rx.vstack(
         profile_section(),
-        user_experience(),
-        user_text_section(),
+        rx.cond(showInfo, user_experience()),
+        rx.cond(showInfo, user_text_section()),
+        
         spacing= "6")
 
 
@@ -23,7 +24,7 @@ SECTION FUNCTIONS
 
 def profile_section()-> rx.Component:
     return rx.hstack(
-            rx.avatar( src= "profile.png", fallback="JL", size="7",radius="medium"),
+            rx.avatar( src= "/profile.png", fallback="JL", size="7",radius="medium"),
             user_info(),
             align="center")
 

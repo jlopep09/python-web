@@ -4,11 +4,14 @@ import link_bio.styles.colors as colors
 
 def navbar() -> rx.Component:
     return rx.hstack(
-        rx.flex(
-            rx.text("Chispy", _as="span", color= colors.Color.PRIMARY),
-            rx.text("Dev", _as="span", color= colors.Color.SECONDARY),
-            font_family="Comfortaa-Medium",
-            font_size = "1.5em"
+        rx.link(
+            rx.flex(
+                rx.text("Chispy", _as="span", color= colors.Color.PRIMARY),
+                rx.text("Dev", _as="span", color= colors.Color.SECONDARY),
+                font_family="Comfortaa-Medium",
+                font_size = "1.5em"
+            ), 
+            href="/"
         ),
         position = "sticky",
         bg="lightgray",
