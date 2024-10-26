@@ -5,10 +5,19 @@ import link_bio.styles.colors as colors
 
 def footer()-> rx.Component:
     return rx.vstack(
-        rx.image(src="favicon.ico"),
-        rx.link(f"© 2023-{datetime.date.today().year} ChispyDev by José López v1.", href="http://localhost:3000/", is_external=True, font_size= styles.Size.MEDIUM,color = colors.TextColor.FOOTER ),
-        rx.text("Convirtiendo la programación como hobby en mi futuro trabajo.", font_size= styles.Size.MEDIUM),
-        margin_bottom = styles.Size.BIG,
+        rx.image(src="favicon.ico", width="32px", height="auto"),
+        rx.link(
+            rx.text(
+                f"© 2023-{datetime.date.today().year} ChispyDev by José López v1.",
+                _hover={"color": colors.TextColor.BODY}
+                ), 
+            href="http://localhost:3000/", 
+            is_external=True, 
+            font_size= styles.Size.MEDIUM,
+            color = colors.TextColor.FOOTER,
+
+            ),
+        rx.text("Convirtiendo la programación en mi futuro trabajo.", font_size= styles.Size.MEDIUM),
         padding_bottom = styles.Size.BIG,
         spacing="0",
         align="center",

@@ -1,7 +1,7 @@
 import reflex as rx
 from link_bio.components.navbar import navbar
 from link_bio.views.header.header import header
-from link_bio.views.links.links import links
+from link_bio.views.links.links import links, linksExtra
 from link_bio.views.footer.footer import footer
 import link_bio.styles.styles as styles
 from link_bio.components.title import title
@@ -19,11 +19,10 @@ def index() -> rx.Component:
                 title("Mis links!", "h3"),
                 links(),
                 title("Otros links interesantes", "h2"),
-                links(),
+                linksExtra(),
                 max_width = styles.MAX_WIDTH,
                 width = "100%",
-                margin_y = styles.Size.BIG
-                
+                margin_y = styles.Size.BIG 
             )
         ),
         footer()

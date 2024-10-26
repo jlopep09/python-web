@@ -8,15 +8,13 @@ import link_bio.styles.colors as colors
 def header()-> rx.Component:
     return rx.vstack(
         rx.hstack(
-            rx.avatar(fallback="JL", size="4"),
+            rx.avatar( src= "profile.png", fallback="JL", size="7",radius="medium", ),
             rx.vstack(
                 rx.heading("José López",_ag="h1", size="4",  color = colors.TextColor.HEADER),
-                rx.heading("@ChispyDev", size="1", margin_top="0px", color = colors.TextColor.BODY),
+                rx.heading("@ChispyDev", size="1", margin_top="0px", color = colors.TextColor.BODY, margin_bottom = styles.Size.SMALL),
                 rx.hstack(
-                    link_icon("http://localhost:3000"),
-                    link_icon("http://localhost:3000"),
-                    link_icon("http://localhost:3000"),
-                    link_icon("http://localhost:3000")
+                    link_icon("https://github.com/jlopep09", "github"),
+                    link_icon("https://www.instagram.com/jose_loppz/", "instagram"),
                 ),
                 spacing="0",
                 align="left"

@@ -26,12 +26,12 @@ BASE_STYLE = {
         "border_radius" : Size.DEFAULT.value ,
         "background_color" : colors.Color.CONTENT.value,
         "color" : colors.TextColor.HEADER.value,
-        "_hover":{"background_color" : colors.Color.SECONDARY.value }
+        "_hover":{"background_color" : colors.Color.SECONDARY.value}
     },
     rx.link:{
         "text_decoration" : "none",
         "_hover" : {}
-    }
+    },
     
 }
 
