@@ -52,3 +52,37 @@ button_body_styles = dict(
     font_size = Size.MEDIUM.value,
     color = colors.TextColor.BODY.value,
 )
+button_body_styles = dict(
+    font_size = Size.MEDIUM.value,
+    color = colors.TextColor.BODY.value,
+)
+footer_style = {
+    "padding_bottom": Size.BIG,
+    "spacing": "0",
+    "align": "center",
+    "color": colors.TextColor.FOOTER,
+}
+footer_link_styles = {
+    "is_external": True, 
+    "font_size": Size.MEDIUM,
+    "color" : colors.TextColor.FOOTER
+}
+
+button_link_icon_styles = {
+    "width": Size.BIG,
+    "height": Size.BIG,
+    "margin": Size.DEFAULT,
+    "color": colors.Color.SECONDARY
+}
+link_icon_icon_styles = {
+    "size":16,
+    "color":colors.Color.SECONDARY,
+    "_hover":{"color": colors.TextColor.BODY}   
+}
+link_icon_styles = dict(
+    is_external=True,
+)
+            
+
+
+    

@@ -6,11 +6,9 @@ def link_icon(url: str, icon_tag: str) -> rx.Component:
     return rx.link(
         rx.icon(
             tag=icon_tag,
-            size=16,
             id="mini_icono_tag",
-            color=colors.Color.SECONDARY,
-            _hover={"color": colors.TextColor.BODY}  # Aplicar hover directo al icono
+            **styles.link_icon_icon_styles
         ),
         href=url,
-        is_external=True,
+        **styles.link_icon_styles
     )

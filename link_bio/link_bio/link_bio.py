@@ -26,12 +26,16 @@ def index() -> rx.Component:
             )
         ),
         footer()
+        
     ) 
     
 
 
 app = rx.App(
-    style = styles.BASE_STYLE
+    style = styles.BASE_STYLE,
+    stylesheets=[
+        "https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    ]
 )
 app.add_page(
     index,

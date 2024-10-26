@@ -8,11 +8,8 @@ def link_button(title: str, body: str, url: str, iconTag: str) -> rx.Component:
             rx.hstack(
                 rx.icon(
                     tag=iconTag,
-                    width=styles.Size.BIG,
-                    height=styles.Size.BIG,
-                    margin=styles.Size.DEFAULT,
-                    color=colors.Color.SECONDARY,
-                    id="hover-icon"  
+                    id="hover-icon",
+                    **styles.button_link_icon_styles 
                 ),
                 rx.vstack(
                     rx.text(title, style=styles.button_title_styles),
