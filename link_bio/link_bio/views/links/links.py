@@ -11,5 +11,6 @@ def links()-> rx.Component:
 def linksExtra()-> rx.Component:
     return rx.vstack(
         link_button("Email","Contáctame", "https://github.com/jlopep09","at-sign" ),
+        link_button("Repositorio","Repositorio con el código completo de esta web", "https://github.com/jlopep09/python-web", "github"),
         width = "100%"
     )
