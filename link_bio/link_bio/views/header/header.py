@@ -43,9 +43,9 @@ def user_experience()-> rx.Component:
     return rx.flex(
         info_text(f"+{(datetime.date.today().year - 2024)}","años de experiencia"),
         rx.spacer(),
-        info_text(f"+{(datetime.date.today().year - 2024)}","años de experiencia"),
+        info_text("+4","aplicaciones desarrolladas"),
         rx.spacer(),
-        info_text(f"+{(datetime.date.today().year - 2024)}","años de experiencia"),
+        info_text("+4","tutoriales gratuitos"),
         width = "100%"
     )
 def user_text_section()-> rx.Component:
