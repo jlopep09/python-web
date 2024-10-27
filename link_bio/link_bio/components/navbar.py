@@ -1,6 +1,8 @@
 import reflex as rx
 import link_bio.styles.styles as styles
 import link_bio.styles.colors as colors
+from link_bio.components.ant_components import float_button
+
 
 def navbar() -> rx.Component:
     return rx.hstack(
@@ -13,6 +15,7 @@ def navbar() -> rx.Component:
             ), 
             href="/"
         ),
+        float_button(), 
         position = "sticky",
         bg="lightgray",
         padding_x=styles.Size.BIG,
