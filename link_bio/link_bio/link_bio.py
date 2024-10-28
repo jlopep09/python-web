@@ -1,10 +1,5 @@
 import reflex as rx
 import link_bio.styles.styles as styles
-import link_bio.pages.index as links_page
-import link_bio.pages.courses as courses_page
-
-
-
 
 
 app = rx.App(

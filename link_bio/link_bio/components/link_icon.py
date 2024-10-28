@@ -1,6 +1,5 @@
 import reflex as rx
 import link_bio.styles.styles as styles
-import link_bio.styles.colors as colors
 
 def link_icon(url: str, icon_tag: str) -> rx.Component:
     return rx.link(
